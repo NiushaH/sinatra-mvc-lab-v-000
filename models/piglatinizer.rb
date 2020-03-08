@@ -1,9 +1,17 @@
 class PigLatinizer
 
+<<<<<<< HEAD
   def piglatinize(user_phrase)
       @user_phrase = user_phrase
       string = @user_phrase
       words = string.split(" ")
+=======
+  piglatinized_phrase_or_word = []
+
+  def piglatinize(string)
+      @string = string
+      words = @string.split(" ")
+>>>>>>> 4b6743370b19ef5b779d144f045ec9b04cf30abe
       phrase = words.collect  {|word| piglatinize_word(word)}
       phrase.join(" ")
   end
